@@ -9,9 +9,15 @@ maintainer:          emertens@gmail.com
 copyright:           2017 Eric Mertens
 category:            Graphics
 build-type:          Simple
-extra-source-files:  ChangeLog.md
+extra-source-files:  ChangeLog.md README.md
 cabal-version:       >=1.10
 tested-with:         GHC==8.0.2, GHC==8.2.1
+bug-reports:         http://github.com/glguy/prettyprinter-vty/issues
+homepage:            http://github.com/glguy/prettyprinter-vty
+
+source-repository head
+    type: git
+    location: https://github.com/glguy/prettyprinter-vty.git
 
 library
   exposed-modules:     Data.Text.Prettyprint.Doc.Render.Vty
