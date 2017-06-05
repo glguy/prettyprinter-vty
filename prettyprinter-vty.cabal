@@ -11,11 +11,11 @@ category:            Graphics
 build-type:          Simple
 extra-source-files:  ChangeLog.md
 cabal-version:       >=1.10
-tested-with:         GHC==8.0.2
+tested-with:         GHC==8.0.2, GHC==8.2.1
 
 library
   exposed-modules:     Data.Text.Prettyprint.Doc.Render.Vty
-  build-depends:       base >=4.9 && <4.10,
+  build-depends:       base >=4.9 && <4.11,
                        prettyprinter >=1.0.1 && <1.1,
                        vty >=5.15.1 && < 5.16
   hs-source-dirs:      src
