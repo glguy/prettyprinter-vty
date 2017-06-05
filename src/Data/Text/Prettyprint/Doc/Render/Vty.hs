@@ -9,9 +9,6 @@ Maintainer  : emertens@gmail.com
 module Data.Text.Prettyprint.Doc.Render.Vty
   ( render, renderSDS
   , VtyDocError(..)
-  , Doc
-  , Image
-  , module Graphics.Vty.Attributes
   ) where
 
 import Control.Exception
