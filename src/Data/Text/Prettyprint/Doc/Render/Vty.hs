@@ -22,7 +22,10 @@ data VtyDocError
   | VtyDocBadAnn -- ^ SimpleDocStream had too many 'SAnnPop'
   deriving (Eq, Ord, Show, Read)
 
-instance Exception VtyDocError
+-- | 'displayException' provides human readable description.
+instance Exception VtyDocError where
+  displayException VtyDocFail   = "Encountered failure in simple document stream while rendering to VTY"
+  displayException VtyDocBadAnn = "Encountered mismatched annotations while rendering to VTY"
 
 -- | Render a document as a VTY image using 'defaultLayoutOptions'.
 --
